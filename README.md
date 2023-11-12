@@ -13,10 +13,10 @@ Concurso Municipalidad de Crespo. Desarrollo de una APP para gestion de reclamos
 
 
 ## Correr el Proyecto
-- Habiendo instalador los requerimientos del paso anterior:
-2. Abrir una consola en el directorio raiz del proyecto (a la misma altura del archivo 'docker-compose.yml')
-3. Ejecutar el comando 'docker-compose up'
-4. Luego que se hayan descargado e instalado todas las dependencias podra ejecutar el proyecto en un navegador (de preferencia Chrome) en la direccion 'localhost:3000'
+Habiendo instalado los requerimientos del paso anterior:
+1. Abrir una consola en el directorio raiz del proyecto (a la misma altura del archivo 'docker-compose.yml')
+2. Ejecutar el comando 'docker-compose up'
+3. Luego que se hayan descargado e instalado todas las dependencias podra ejecutar el proyecto en un navegador (de preferencia Chrome) en la direccion 'localhost:3000'
 
 
 ### Documentacion
