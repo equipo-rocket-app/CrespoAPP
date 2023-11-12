@@ -1,0 +1,38 @@
+{
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "categories": [
+    "education"
+  ],
+  "description": "PWA para Gestión de Reclamos de Ciudadanos, Municipalidad de Crespo",
+  "dir": "ltr",
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "lang": "es-AR",
+  "name": "PWA +Crespo Gestión Reclamos APP",
+  "orientation": "portrait",
+  "prefer_related_application": false,
+  "scope": "/",
+  "short_name": "PWA +Crespo",
+  "start_url": "/"
+}
