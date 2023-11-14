@@ -2,13 +2,20 @@ import { initializeApp } from "firebase/app";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { v4 as uuidV4 } from "uuid";
 
+const apiKey = process.env.REACT_APP_APIKEY;
+const authDomain = process.env.REACT_APP_AUTH_DOMAIN;
+const projectId = process.env.REACT_APP_PROJECT_ID;
+const storageBucket = process.env.REACT_APP_STORAGE_BUCKET;
+const messagingSenderId = process.env.REACT_APP_MESSAGING_SENDER_ID;
+const appId = process.env.REACT_APP_APP_ID;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDScPcOO5A6UGVSB6wnhVsKWBNOGg3Pjc8",
-  authDomain: "crespo-app-5ee01.firebaseapp.com",
-  projectId: "crespo-app-5ee01",
-  storageBucket: "crespo-app-5ee01.appspot.com",
-  messagingSenderId: "1086472846079",
-  appId: "1:1086472846079:web:7a86373168386ad3df2aca",
+  apiKey,
+  authDomain,
+  projectId,
+  storageBucket,
+  messagingSenderId,
+  appId,
 };
 
 const app = initializeApp(firebaseConfig);

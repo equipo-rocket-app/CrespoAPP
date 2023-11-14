@@ -123,8 +123,6 @@ class Reclamo(models.Model):
 
     imagen_reclamo = models.URLField(blank=True, null=True)
     imagen_reparacion = models.URLField(blank=True, null=True)
-    # imagen_reparacion = models.ImageField(
-    #     upload_to='reparaciones/', blank=True, null=True)
 
     def __str__(self) -> str:
         return self.descripcion

@@ -4,7 +4,6 @@ from .views import (
     LogInView,
     UsuarioCreateAPIView,
     ReclamoCreateAPIView,
-    # ReclamoListAPIView,
     ReclamoRetrieveAPIView,
     ReclamoUpdateAPIView,
     TipoReclamoListAPIView,
@@ -54,5 +53,4 @@ urlpatterns = [
     path("noticias/", NoticiasListAPIView.as_view(), name="noticias"),
     path("reclamo/chart/<id>/", ReclamosChartAPIView.as_view(),
          name="reclamos_chart"),
-    # path("reclamos/", ReclamoListAPIView.as_view(), name="listar_reclamos"),
 ]

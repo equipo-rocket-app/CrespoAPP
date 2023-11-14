@@ -20,6 +20,7 @@ class ReclamoAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         'fecha_creacion_formatted',
+        'tipo',
         'urgencia',
         'estado',
         'usuario_creo',
@@ -34,7 +35,6 @@ class ReclamoAdmin(admin.ModelAdmin):
                      'usuario_creo__last_name', "calle__nombre", "dir_nro"]
     readonly_fields = (
         'id',
-        'tipo',
         'descripcion',
         "calle",
         "dir_nro",

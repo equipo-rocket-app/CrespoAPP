@@ -9,6 +9,7 @@ export default function noticiaCard({ fecha, titulo, img, link }) {
   return (
     <Link href={link} overlay underline="none">
       <Card
+        elevation={0}
         sx={{
           height: "100%",
           display: "flex",
