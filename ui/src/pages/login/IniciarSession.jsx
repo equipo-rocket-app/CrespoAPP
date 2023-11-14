@@ -57,7 +57,6 @@ export default function IniciarSession() {
           backgroundImage:
             "url(https://firebasestorage.googleapis.com/v0/b/creapoappv2.appspot.com/o/bg-Nuestra-Ciudad%20(1).png?alt=media&token=e3889063-8e37-4a24-aced-eb5f346d4c27)",
           backgroundRepeat: "no-repeat",
-          backgroundColor: "grey",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

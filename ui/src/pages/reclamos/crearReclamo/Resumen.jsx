@@ -138,8 +138,16 @@ export default function Review() {
               </Typography>
               {formFields.ubicacionGPSReclamo.latitude ? (
                 <Typography gutterBottom display={"inline"}>
-                  {formFields.ubicacionGPSReclamo.latitude &&
-                    `Lat: ${formFields.ubicacionGPSReclamo.latitude}; Lng: ${formFields.ubicacionGPSReclamo.longitude} `}
+                  {formFields.ubicacionGPSReclamo.latitude && (
+                    <a
+                      href={`https://www.google.com/maps?q=${formFields.ubicacionGPSReclamo.latitude},${formFields.ubicacionGPSReclamo.longitude}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {" "}
+                      Locacion GPS{" "}
+                    </a>
+                  )}
                 </Typography>
               ) : (
                 <Typography color="#ff0000" gutterBottom display={"inline"}>
