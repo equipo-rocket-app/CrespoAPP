@@ -1,8 +1,9 @@
 /* eslint-disable multiline-ternary */
 /* eslint-disable no-unused-vars */
+/* eslint-disable indent */
 import React, { useState } from "react";
 import { useQuery } from "react-query";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -19,6 +20,7 @@ export default function ReclamosList() {
     data: userReclamosList,
     error: errorUserReclamosList,
     isLoading: isLoadingUserReclamosList,
+    isFetching: isFetchingUserReclamosList,
   } = useQuery(["userReclamosList"], () =>
     getReclamosByIdUser(userData.userId)
   );
@@ -52,7 +54,8 @@ export default function ReclamosList() {
         Lista de Reclamos
       </Typography>
       <main>
-        {userReclamosList?.length > 0 ? (
+        {userReclamosList?.length > 0 &&
+        (!isLoadingUserReclamosList || !isFetchingUserReclamosList) ? (
           <Container sx={{ py: 8 }} maxWidth="lg">
             <Grid container spacing={2}>
               {userReclamosList.slice(startIndex, endIndex).map(reclamo => (

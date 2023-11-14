@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 from pathlib import Path
+from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-gtr012)(aeg+@j+1%(b@rhomy5eprdtoq1u2dnj^xi!ly_d0gt"
+# SECRET_KEY = "django-insecure-gtr012)(aeg+@j+1%(b@rhomy5eprdtoq1u2dnj^xi!ly_d0gt"
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -51,6 +57,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "CrespoAPP",
     "rangefilter",
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
