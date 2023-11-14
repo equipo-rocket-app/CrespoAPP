@@ -11,7 +11,6 @@ admin.site.register(Usuario)
 admin.site.register(Barrio)
 admin.site.register(Calle)
 admin.site.register(Noticia)
-# admin.site.register(Reclamo)
 admin.site.register(ReclamoUrgencia)
 admin.site.register(TipoReclamo)
 
@@ -27,7 +26,9 @@ class ReclamoAdmin(admin.ModelAdmin):
         "usuario_telefono",
         'mostrar_direccion',
         'mostrar_imagen_reclamo',
-        'mostrar_imagen_reparacion'
+        'mostrar_imagen_reparacion',
+        'imagen_reclamo',
+        'imagen_reparacion'
     )
     list_filter = ('tipo', 'urgencia', 'estado',
                    ('fecha_creacion', DateRangeFilter),)
