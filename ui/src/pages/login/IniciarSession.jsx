@@ -55,7 +55,7 @@ export default function IniciarSession() {
         md={7}
         sx={{
           backgroundImage:
-            "url(https://firebasestorage.googleapis.com/v0/b/creapoappv2.appspot.com/o/bgNuestraCiudad.png?alt=media&token=9037553a-9e3e-4aeb-a1b3-dd3e93443cf8)",
+            "url('https://firebasestorage.googleapis.com/v0/b/creapoappv2.appspot.com/o/bgNuestraCiudad.png?alt=media&token=9037553a-9e3e-4aeb-a1b3-dd3e93443cf8')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
