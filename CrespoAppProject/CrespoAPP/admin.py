@@ -27,8 +27,6 @@ class ReclamoAdmin(admin.ModelAdmin):
         'mostrar_direccion',
         'mostrar_imagen_reclamo',
         'mostrar_imagen_reparacion',
-        'imagen_reclamo',
-        'imagen_reparacion'
     )
     list_filter = ('tipo', 'urgencia', 'estado',
                    ('fecha_creacion', DateRangeFilter),)
