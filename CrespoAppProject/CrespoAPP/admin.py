@@ -7,7 +7,6 @@ from django.utils.safestring import mark_safe
 
 from .models import *
 
-admin.site.register(Usuario)
 admin.site.register(Barrio)
 admin.site.register(Calle)
 admin.site.register(Noticia)
